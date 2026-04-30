@@ -57,7 +57,7 @@ if (isset($_POST['btn_delete'])) {
         <h1 class="contenttitle">View Students</h1>
         <table>
             <thead>
-                <tr><th>ID</th><th>Surname</th><th>Name</th><th>Address</th><th>Contact</th></tr>
+                <tr><th>ID</th><th>Surname</th><td>Middlename</td><th>Name</th><th>Address</th><th>Contact</th></tr>
             </thead>
             <tbody>
                 <?php
@@ -66,6 +66,7 @@ if (isset($_POST['btn_delete'])) {
                     echo "<tr>
                         <td>{$row['id']}</td>
                         <td>{$row['surname']}</td>
+                        <td>{$row['middlename']}</td>
                         <td>{$row['name']}</td>
                         <td>{$row['address']}</td>
                         <td>{$row['contact_number']}</td>
