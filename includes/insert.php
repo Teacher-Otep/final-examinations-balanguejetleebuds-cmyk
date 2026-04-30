@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
         
     } catch (PDOException $e) {
-        echo "Database Error: " . $e->getMessage();
+        die("Error: " . $e->getMessage());
     }
 }
 ?>
